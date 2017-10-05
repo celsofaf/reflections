@@ -1,0 +1,6 @@
+git ...
+...status:            changes since last commit
+...log:               list of commits
+...diff [old] [new]:  differences between old and new commits
+...init:              initializes a git repository
+...checkout [commit]: goes to [commit], which can be 'head' (most recent?)
