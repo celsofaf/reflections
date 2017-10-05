@@ -1,6 +1,9 @@
 git ...
-...status:            changes since last commit
-...log:               list of commits
-...diff [old] [new]:  differences between old and new commits
-...init:              initializes a git repository
-...checkout [commit]: goes to [commit], which can be 'head' (most recent?)
+...status:              changes since last commit
+...log:                 list of commits
+...diff [old] [new]:    differences between old and new commits
+...init:                initializes a git repository
+...checkout [commit]:   goes to [commit], which can be 'head' (most recent?)]
+...commit -m [message]: creates a snapshot of the repository, with changes from staging area
+...add [files]:         places files in staging area
+...reset [files]:       removes files back from staging area
