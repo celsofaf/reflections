@@ -1,9 +1,17 @@
 git ...
 ...status:              changes since last commit
 ...log:                 list of commits
-...diff [old] [new]:    differences between old and new commits
+     --graph --oneline: nice way to view... may also add branches to the command.
+...diff [old] [new]:    differences between old and new commits. 'diff <nothing>' shows differences between wd and staging area. 'diff --staged' shows between staging and repository (most recent commit).
 ...init:                initializes a git repository
-...checkout [commit]:   goes to [commit], which can be 'head' (most recent?)]
+...checkout [commit]:   goes to [commit], which can be 'master' (most recent?)]
+           -b [branch]: creates new branch and checks out
 ...commit -m [message]: creates a snapshot of the repository, with changes from staging area
 ...add [files]:         places files in staging area
-...reset [files]:       removes files back from staging area
+...reset [files]:       removes changes from staging area. 'reset --hard' removes changes from working directory!
+...branch [name]:       creates branch [name] (a label for a commit)
+...merge [b1] [b2]:     merges branch b2 into current branch b1, making a new commit to current branch
+...merge --abort:       reverts merge
+...show [commit_id]:    diff between commit and its parent
+...remote:              manage remote repository (remote add origin url)
+...push b1 b2:          sends local branch b2 to remote branch b1 as commit
